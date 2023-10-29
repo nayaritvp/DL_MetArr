@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>To Do List</title>
+</head>
+<body>
+<section id="Title">
+<h1>To Do List</h1>
+<img src="./assets/img/youcan.png" alt="youcan" width="220px" height="150px">
+<img src="./assets/img/lista.png" alt="lista" width="150px" height="150px">
+</section>
+<div class="datos">
+    <p id="total">Total tareas: 0</p>
+    <p id="completadas">Tareas Completadas: 0</p>
+</div>
+<div class="contenedor">
+    <div id="formulario" class="formulario">
+        <h3>☀☺¿Qué haremos?☺☀</h3>
+        <input type="text" id="tarea">
+        <button id="agregar">agregar</button>
+    </div>
+    <div class="tareas" id="tareas">
+        <div class="item-tarea">
+            <p>Tarea 1</p>
+            <div class="botones">
+                <button class="eliminar" data-id="${item.id}">✘</button>
+                <button class="completada" data-id="${item.id}">✔</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
