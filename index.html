@@ -14,8 +14,8 @@
 <img src="./assets/img/lista.png" alt="lista" width="150px" height="150px">
 </section>
 <div class="datos">
-    <p id="total">Total tareas: 0</p>
-    <p id="completadas">Tareas Completadas: 0</p>
+    <p id="total">Total tareas: <span id="totalCount">3</span></p>
+    <p id="completadas">Tareas Completadas: <span id="completadasCount">1</span></p>    
 </div>
 <div class="contenedor">
     <div id="formulario" class="formulario">
@@ -24,13 +24,6 @@
         <button id="agregar">agregar</button>
     </div>
     <div class="tareas" id="tareas">
-        <div class="item-tarea">
-            <p>Tarea 1</p>
-            <div class="botones">
-                <button class="eliminar" data-id="${item.id}">✘</button>
-                <button class="completada" data-id="${item.id}">✔</button>
-            </div>
-        </div>
     </div>
 </div>
 <script src="./assets/js/main.js"></script>
