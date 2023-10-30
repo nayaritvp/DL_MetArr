@@ -88,8 +88,8 @@ function tareaLista(id) {
 
 
 function actualizarConteo() {
-    totalElement.textContent = listaTareas.length; // Actualizar el conteo total
+    totalElement.textContent = listaTareas.length;
     const completadas = listaTareas.filter((tarea) => tarea.terminado).length;
-    completadasElement.textContent = completadas; // Actualizar el conteo de completadas
-}
+    completadasElement.textContent = completadas; 
 actualizarConteo();
+}
